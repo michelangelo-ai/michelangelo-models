@@ -1,0 +1,17 @@
+[project]
+name = "michelangelo-models"
+version = "0.0.1"
+description = "Pluggable, community-contributed model architectures for Michelangelo"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.10"
+authors = [
+    { name = "Michelangelo maintainers" },
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/michelangelo_models"]
